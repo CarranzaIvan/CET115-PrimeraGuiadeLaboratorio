@@ -63,8 +63,62 @@
 
 }
 
-
 .div-card-circule:hover, .div-card-menu:hover {
     background-color: #c8fafd; /* Color de fondo al pasar el cursor */
     cursor: pointer; /* Estilo del cursor al pasar el cursor */
+}
+
+.div-card-filtro {
+    background-color: white; /* Fondo blanco */
+    width: 240px; /* Ancho fijo */
+    height: 730px; /* Alto fijo */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra gris */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.filtro-calificacion {
+    color: #05b2b8; /* Color del navbar */
+    text-decoration: none;
+}
+
+.filtro-calificacion:hover{
+    color: #000000; /* Color del navbar */
+    cursor: pointer;
+    font-weight: bold; /* Estilo al pasar el cursor */
+    text-decoration: none;
+}
+
+.filtro-precio {
+    color: #000000; /* Color del navbar */
+    text-decoration: none;
+}
+
+.filtro-precio:hover{
+    color: #05b2b8; /* Color del navbar */
+    cursor: pointer;
+    font-weight: bold; /* Estilo al pasar el cursor */
+    text-decoration: none;
+}
+
+
+/* Estilos para el switch personalizado */
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color:#05b2b8; /* Color rosado para el switch activado */
+    border-color: #05b2b8; /* Color rosado para el borde */
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #fff; /* Color blanco para el círculo del switch activado */
+}
+
+.custom-switch .custom-control-label::before {
+    background-color: #dee2e6; /* Color para el switch desactivado */
+}
+
+.custom-switch .custom-control-label::after {
+    background-color: #fff; /* Color para el círculo del switch desactivado */
 }
