@@ -1,8 +1,13 @@
-.navbar {
+.navbar, .footer {
     width: 100%;
     background-color: #05b2b8; /* Color del navbar */
     margin-block-end: 50px;
     padding: 5px 0;
+}
+
+/* Asegura que todos los elementos dentro del footer sean blancos */
+.footer i {
+    color: #fff; /* Aplica el color blanco a todos los elementos hijos del footer */
 }
 
 .logo-img {
