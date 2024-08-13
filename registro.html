@@ -16,11 +16,20 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!-- SweetAlert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <style>
+
+        .navbar {
+            width: 100%;
+            background-color: #05b2b8;/* Color del navbar */
+            margin-block-end: 50px;
+            padding: 5px 0;
+        }
+
         .register-box {
             width: 100%;
             max-width: 700px;
@@ -42,20 +51,45 @@
         label {
             font-weight: normal !important;
         }
+
+        footer {
+            background-color: #05b2b8;
+            color: white;
+            padding: 5px 0;
+            text-align: left;
+            width: 100%;
+            margin-top: 50px;
+            /* Separación entre el footer y la tarjeta */
+        }
     </style>
+
+
 </head>
 
-<body class="hold-transition register-page">
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="color: white;">
+            <img src="imagenes/compraMax.jpeg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <strong>CompraMax</strong>
+        </a>
+    </div>
+</nav>
+
+
     <div class="register-box">
         <div class="card ">
             <div class="card-header text-center">
-                <img src="imagenes/compraMax.jpeg" alt="CompraMax Logo" height="175px" width="175px">
+                <img src="imagenes/compraMax.jpeg" alt="CompraMax Logo" height="175px" width="175x">
             </div>
             <div class="card-body">
                 <center>
                     <h2><strong>Crear cuenta</strong></h2>
                 </center>
-                <form class="needs-validation" novalidate action="registro.html" method="post">
+                <form action="registro.html" class="needs-validation" novalidate>
+
                     <div class="row">
                         <div class="col-md-6">
                             <label for="validationNombreCompleto" class="form-label">Nombre Completo</label>
@@ -127,6 +161,12 @@
             <!-- /.form-box -->
         </div><!-- /.card -->
     </div>
+
+    <footer>
+        <div class="container">
+            <p><strong>&copy; 2024 CompraMax. Todos los derechos reservados.</strong></p>
+        </div>
+    </footer>
 
     <script>
         Swal.fire({
