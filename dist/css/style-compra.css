@@ -1,0 +1,12 @@
+.navbar {
+    width: 100%;
+    background-color: #05b2b8;/* Color del navbar */
+    margin-block-end: 50px;
+    padding: 5px 0;
+}
+
+.logo-img {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
