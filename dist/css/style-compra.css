@@ -70,8 +70,8 @@
 
 .div-card-filtro {
     background-color: white; /* Fondo blanco */
-    width: 240px; /* Ancho fijo */
-    height: 730px; /* Alto fijo */
+    width: 260px; /* Ancho fijo */
+    height: 740px; /* Alto fijo */
     border-radius: 15px; /* Esquinas redondeadas */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra gris */
     display: flex;
@@ -122,3 +122,38 @@
 .custom-switch .custom-control-label::after {
     background-color: #fff; /* Color para el círculo del switch desactivado */
 }
+
+/* Agregar borde alrededor de la imagen */
+.img-bordered {
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+}
+
+/* Estilo para el botón */
+.btn-new-carrito {
+    background-color: #9DE7EA;
+    border-radius: 100px; /* Esquinas redondeadas */
+    transition: border-color 0.1s ease;
+}
+
+/* Cambiar el borde al pasar el mouse sobre el botón */
+.btn-new-carrito:hover {
+    background-color: #fff;
+    border-color: #000;
+}
+
+
+.pagination .page-item.active .page-link {
+    background-color:  #05b2b8;  /* Fondo aqua para el elemento activo */
+    border-color:  #05b2b8;       /* Borde aqua para el elemento activo */
+    color: #fff;              /* Color del texto en blanco para el activo */
+}
+
+.pagination .page-item .page-link:hover:not(.active) {
+    border-color:  #05b2b8;         /* Borde aqua al hacer hover */
+}
+
+.pagination .page-link {
+    color: #000; /* Color del texto de los enlaces */
+}
+
