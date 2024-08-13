@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    background-color: #05b2b8;/* Color del navbar */
+    background-color: #05b2b8; /* Color del navbar */
     margin-block-end: 50px;
     padding: 5px 0;
 }
@@ -9,4 +9,57 @@
     max-width: 120px;
     height: auto;
     object-fit: contain;
+}
+
+.fondo-aqua {
+    background-color: #ECF9FA; /* Color de fondo */
+}
+
+.div-card-menu {
+    background-color: white; /* Fondo blanco */
+    width: 160px; /* Ancho fijo */
+    height: 145px; /* Alto fijo */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra gris */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.div-card-menu i{
+    font-size: 2.5rem; /* Tamaño del icono */
+}
+
+.div-card-menu b {
+    font-size: 1.0rem; /* Tamaño del texto en negrita */
+    margin-bottom: 5px; /* Espacio debajo del texto en negrita */
+}
+
+.div-card-menu span {
+    font-size: 0.9rem; /* Tamaño del texto normal */
+}
+
+.div-card-circule {
+    background-color: white; /* Fondo blanco */
+    width: 50px; /* Ancho fijo */
+    height: 50px; /* Alto fijo */
+    border-radius: 100px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra gris */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.div-card-circule i{
+    font-size: 1.5rem; /* Tamaño del icono */
+    text-shadow: 0 0 2px rgb(0, 0, 0); /* Cambia el grosor del ícono simulando sombra */
+
+}
+
+
+.div-card-circule:hover, .div-card-menu:hover {
+    background-color: #c8fafd; /* Color de fondo al pasar el cursor */
+    cursor: pointer; /* Estilo del cursor al pasar el cursor */
 }
