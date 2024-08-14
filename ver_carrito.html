@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompraMax | Ver carrito</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: #05b2b8;
+            /* Color del navbar */
+            margin-block-end: 40px;
+            padding: 5px 0;
+        }
+
+        footer {
+            background-color: #05b2b8;
+            color: white;
+            padding: 5px 0;
+            text-align: left;
+            width: 100%;
+            margin-top: 40px;
+            /* Separación entre el footer y la tarjeta */
+        }
+
+        .imagen {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: white;">
+                <img src="imagenes/compraMax.jpeg" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                <strong>CompraMax</strong>
+            </a>
+        </div>
+    </nav>
+
+    <body>
+        <div class="container-xxl">
+            <h2 style="margin-left: 50px;">Mi Carrito</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8"
+                    style="padding-right: 20px; margin-right: 15px;  border-right: 1px solid #dee2e6; height: 100%;">
+                    <div class="card cart-item">
+                        <div class="card-body row">
+                            <div class="d-flex align-items-center col-md-10">
+                                <img src="imagenes/drone.png" alt="DJI Mini 2 SE Fly" class="product-img imagen">
+                                <div class="ml-3">
+                                    <h5>DJI Mini 2 SE Fly</h5>
+                                    <p>Categoría: Cámaras</p>
+                                    <div class="d-flex">
+                                        <button class="btn btn-outline-secondary btn-sm mr-2">-</button>
+                                        <span>1</span>
+                                        <button class="btn btn-outline-secondary btn-sm ml-2">+</button>
+                                        <button class="btn btn-outline-danger btn-sm ml-2" data-toggle="modal"
+                                            data-target="#confirmModal"><i class="fa fa-trash"></i> Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <br>
+                                <h4>$125.00</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card cart-item">
+                        <div class="card-body row">
+                            <div class="d-flex align-items-center col-md-10">
+                                <img src="imagenes/epson.png" alt="Impresora Epson EcoTank L4260"
+                                    class="product-img imagen">
+                                <div class="ml-3">
+                                    <h5>Impresora Epson EcoTank L4260 - multifunción - color - chorro de tinta -
+                                        rellenable
+                                    </h5>
+                                    <p>Categoría: Impresoras y Escáneres</p>
+                                    <div class="d-flex">
+                                        <button class="btn btn-outline-secondary btn-sm mr-2">-</button>
+                                        <span>1</span>
+                                        <button class="btn btn-outline-secondary btn-sm ml-2">+</button>
+                                        <button class="btn btn-outline-danger btn-sm ml-2" data-toggle="modal"
+                                            data-target="#confirmModal"><i class="fa fa-trash"></i> Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <br>
+                                <h4>$259.00</h4>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card cart-item">
+                        <div class="card-body row">
+                            <div class="d-flex align-items-center col-md-10">
+                                <img src="imagenes/celular.jpg" alt="Celular Samsung Galaxy S24 Ultra"
+                                    class="product-img imagen">
+                                <div class="ml-3">
+                                    <h5>Celular Samsung Galaxy S24 Ultra 512GB+12GB Titanium Gray</h5>
+                                    <p>Categoría: Celulares</p>
+                                    <div class="d-flex">
+                                        <button class="btn btn-outline-secondary btn-sm mr-2">-</button>
+                                        <span>1</span>
+                                        <button class="btn btn-outline-secondary btn-sm ml-2">+</button>
+                                        <button class="btn btn-outline-danger btn-sm ml-2" data-toggle="modal"
+                                            data-target="#confirmModal"><i class="fa fa-trash"></i> Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <br>
+                                <h4>$1499.00</h4>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body col-md-12" style="padding: 14px; margin-bottom: 0px;">
+                            <div class="cart-summary">
+                                <h5>Subtotal (3 productos)</h5>
+                                <h4>$1883.00 <span style="font-size: 15px;">/USD</span></h4>
+                                <button class="btn btn-block"
+                                    style="background-color: #0fb9b8; color: white; font-weight: bold; border-radius: 1rem;">Completar
+                                    compra</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 8px; margin-top: 0px;">Productos sugeridos</p>
+                    <div class="card">
+                        <div class="card-body" style="padding: 10px;">
+                            <div class="row">
+                                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                                    <img src="imagenes/lenovo.png" alt="Lenovo" class="product-img img-fluid imagen">
+                                </div>
+                                <div class="col-md-7">
+                                    <h5>Lenovo</h5>
+                                    <p class="text-secondary" style="font-size: 15px;">Lenovo, 16 GB de RAM, SSD de 256
+                                        GB
+                                    </p>
+                                    <div class="d-flex">
+                                        <button class="btn btn-sm ml-2"
+                                            style="background-color: #9DE7EA; border-radius: 1rem;"><i
+                                                class="fa fa-cart-plus"></i> Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body" style="padding: 10px;">
+                            <div class="row">
+                                <div class="col-md-5 d-flex align-items-center justify-content-center">
+                                    <img src="imagenes/samsung.png" alt="DJI Mini 2 SE Fly"
+                                        class="product-img img-fluid imagen">
+                                </div>
+                                <div class="col-md-7">
+                                    <h5>Samsung</h5>
+                                    <p class="text-secondary" style="font-size: 15px;">SAMSUNG Smart TV Class Crystal
+                                        UHD 4K
+                                    </p>
+                                    <div class="d-flex">
+                                        <button class="btn btn-sm ml-2"
+                                            style="background-color: #9DE7EA; border-radius: 1rem;"><i
+                                                class="fa fa-cart-plus"></i> Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmModalLabel">Confirmar Eliminación</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Estás seguro de que deseas eliminar este producto?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger" onclick="deleteProduct()">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p><strong>&copy; 2024 CompraMax. Todos los derechos reservados.</strong></p>
+            </div>
+        </footer>
+        <script>
+            function deleteProduct() {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Producto eliminado exitosamente",
+                    showConfirmButton: false,
+                    timer: 2500
+                });
+                $('#confirmModal').modal('hide');
+            }
+        </script>
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="../../plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../../dist/js/adminlte.min.js"></script>
+    </body>
+
+</html>
