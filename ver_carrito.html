@@ -20,47 +20,85 @@
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!-- SweetAlert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        .navbar {
+        .navbar,
+        .footer {
             width: 100%;
             background-color: #05b2b8;
             /* Color del navbar */
-            margin-block-end: 40px;
+            margin-block-end: 70px;
             padding: 5px 0;
         }
 
-        footer {
-            background-color: #05b2b8;
-            color: white;
-            padding: 5px 0;
-            text-align: left;
-            width: 100%;
-            margin-top: 40px;
-            /* Separación entre el footer y la tarjeta */
+        /* Asegura que todos los elementos dentro del footer sean blancos */
+        .footer i {
+            color: #fff;
+            /* Aplica el color blanco a todos los elementos hijos del footer */
         }
 
         .imagen {
             width: 100px;
             height: auto;
         }
+        
     </style>
 </head>
 
-<body>
+<body style="background-color: #ECF9FA;">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" style="color: white;">
-                <img src="imagenes/compraMax.jpeg" alt="Logo" width="30" height="30"
-                    class="d-inline-block align-text-top">
-                <strong>CompraMax</strong>
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/compraMax.jpeg" alt="Logo" height="50">
             </a>
+
+            <!-- Título y contenido del navbar -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <span class="navbar-text h1 text-white"><b>CompraMax</b></span>
+                    </li>
+                </ul>
+
+                <!-- Formulario de búsqueda -->
+                <form class="form-inline mx-auto w-50">
+                    <div class="input-group w-100">
+                        <input class="form-control" type="search" placeholder="Buscar productos en CompraMax..."
+                            aria-label="Buscar">
+                        <div class="input-group-append">
+                            <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Botones de cuenta y carrito -->
+                <div class="ml-auto">
+                    <a class="btn btn-light mr-2" href="#">
+                        <i class="bi bi-person"></i>
+                        <span class="font-weight-normal">Cuenta</span>
+                    </a>
+                    <a class="btn btn-light position-relative" href="#">
+                        <i class="bi bi-cart"></i>
+                        <span class="font-weight-normal">Carrito</span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                          </span>
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
 
     <body>
         <div class="container-xxl">
-            <h2 style="margin-left: 50px;">Mi Carrito</h2>
+            <h2 style="margin-left: 50px; margin-top: 100px;">Mi carrito</h2>
 
             <div class="row justify-content-center">
                 <div class="col-md-8"
@@ -220,10 +258,16 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="container">
-                <p><strong>&copy; 2024 CompraMax. Todos los derechos reservados.</strong></p>
+        <footer class="footer d-flex justify-content-between align-items-center mt-5 py-2 my-0 fixed-bottom">
+            <div class="col-md-4 d-flex align-items-center">
+              <span class="mb-3 mb-md-0 text-white font-weight-bold">© 2024 CompraMax, Todos los derechos reservados.</span>
             </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3 mr-2"><i class="bi bi-facebook"></i></li>
+              <li class="ms-3 mr-2"><i class="bi bi-instagram"></i></li>
+              <li class="ms-3 mr-2"><i class="bi bi-twitter-x"></i></li>
+            </ul>
         </footer>
         <script>
             function deleteProduct() {
